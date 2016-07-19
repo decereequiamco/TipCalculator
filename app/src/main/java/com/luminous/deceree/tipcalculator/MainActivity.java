@@ -107,47 +107,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-//            @Override
-//            public void onStartTrackingTouch(SeekBar seekBar) {
-//            }
-//            @Override
-//            public void onStopTrackingTouch(SeekBar seekBar) {
-//                seekNum.setText("" + seekBar.getProgress()+"%");
-//            }
-//        });
-//
-//        TvTip = (TextView)findViewById(R.id.TvTip);
-//        TvTip.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (TvPer.getText().toString().equals("") || TvTip.getText().toString().isEmpty()) {
-//                    Toast.makeText(getApplicationContext(), "All Input field must be filled", Toast.LENGTH_LONG).show();
-//                    return;
-//                }
-//                double totalBillInput = Double.parseDouble(TvPer.getText().toString());
-//                if (tipPercentValue == 0 || tipsForNumberOfPeople == 0) {
-//                    Toast.makeText(getApplicationContext(), "Set values for Tip percent and split number", Toast.LENGTH_LONG).show();
-//                    return;
-//                }
-//                double percentageOfTip = (totalBillInput * tipPercentValue) / 100;
-//                double totalAmountForTheBill = totalBillInput + percentageOfTip;
-//                double tipPerEachPerson = percentageOfTip / tipsForNumberOfPeople;
-//                TvPer.setText(removeTrailingZero(String.valueOf(String.format("%.2f", totalAmountForTheBill))));
-//
-//                TvTip.setText(removeTrailingZero(String.valueOf(String.format("%.2f", tipPerEachPerson))));
-//            }
-//
-//        });
-//    }
 
-//    public String removeTrailingZero(String formattingInput) {
-//        if (!formattingInput.contains(".")) {
-//            return formattingInput;
-//        }
-//        int dotPosition = formattingInput.indexOf(".");
-//        String newValue = formattingInput.substring(dotPosition, formattingInput.length());
-//        if (newValue.startsWith(".0")) {
-//            return formattingInput.substring(0, dotPosition);
-//        }
-//        return formattingInput;
-//    }
